@@ -56,7 +56,7 @@ jobs:
 
       - name: Install Node dependencies
         run: |
-          npm ci
+          npm i --save-dev
         
       - name: Run Hardhat tests
         run: |
