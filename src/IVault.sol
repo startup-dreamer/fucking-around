@@ -9,21 +9,28 @@ pragma solidity ^0.8.0;
  */
 
 abstract contract IVault {
-        
-    /** @dev Error for Zero Address */
+    /**
+     * @dev Error for Zero Address
+     */
     error NullAddressError();
 
     error ZeroAmountError();
 
     error TransferError();
 
-    /** @dev Error for zero weight */
+    /**
+     * @dev Error for zero weight
+     */
     error ZeroWeightError();
 
-    /** @dev Error if sender is not keeper */
+    /**
+     * @dev Error if sender is not keeper
+     */
     error OnlyKeeperAllowed();
 
-    /** @dev Error if sender is not vault manager */
+    /**
+     * @dev Error if sender is not vault manager
+     */
     error OnlyVaultManager();
 
     error MarketRemovalFail();
